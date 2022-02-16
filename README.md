@@ -1,36 +1,46 @@
+# Getting Started with Create React App
 
-## Frontend Project
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Project Overview
+## Available Scripts
 
-This is frontend project. The idea is to use all the technologies we practiced earlier, that include javascript, React, reduc and TypeScript.
-Be creattive with the project and you can use whatever design or Api that you like. It should have all the below feature in order of importance.
+In the project directory, you can run:
 
-### Requirements
+### `npm start`
 
-💊  Use React, Redux , TypeScript.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-💊  Divide the app into smaller components. For example create a separate component for the card and separate component for the button.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-💊  Implement a working Cart System as shown in the demo. disable button once item is added to cart. show a counter on the cart icon.
+### `npm test`
 
-💊  Implement Search functionality
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-💊  When clicking on back button , you app should not refresh. checkout useHistory hook.
+### `npm run build`
 
-💊  Implement state persistance by using localStorage
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-💊  create a light and Dark theme
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-💊  Implement sorting (not required)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-💊  Anything else that you would like to add
+### `npm run eject`
 
-### Api To Use
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-- this is totally your choice , use whatevr. one example below
-- https://restcountries.com/
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-### Styling
- - Totally your choice. you can use Bootstrap, semanticUI, materilUI, tailwindCSS or write your own custom css/sass.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

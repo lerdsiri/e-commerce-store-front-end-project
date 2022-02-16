@@ -1,0 +1,9 @@
+.header {
+    background-color: aquamarine;
+    text-align: center; 
+    font-weight: 700;
+}
+
+.product-pic {
+    max-width: 10rem;
+}
