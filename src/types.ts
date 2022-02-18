@@ -2,6 +2,7 @@ import { store } from "store";
 
 //custom types
 export type Product = {
+    //properties needed for ProductTable.tsx
     category: string
     description: string
     id: number
@@ -9,6 +10,9 @@ export type Product = {
     price: number
     rating: {rate: number, count: number}
     title: string
+
+    //additional properties needed for Cart.tsx
+    purchasedQuant: number
 }
 
 
@@ -16,6 +20,17 @@ export type Product = {
 export type ProductReducerState = {
     products: Product[]
     filteredProdList: Product[]
+    sortedByPrice: Boolean
+    sortedByRating: Boolean
+}
+
+export type CartReducerState = {
+    cart: Product[]
+    numOfItems: 0
+}
+
+export type ThemeReducerState = {
+    theme: 'color1' | 'color2'
 }
 
 export type RootState = ReturnType<typeof store.getState>;

@@ -1,14 +1,24 @@
+.cart-empty-text {
+    padding: 2rem;
+}
+
+.table {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
 .table-header {
     color: var(--text-primary);
     background-color: var(--background);
     transition: all .5s;
-}
-
-.table-header > tr > th {
-    text-align: top; 
+    text-align: center; 
     font-weight: 700;
 }
 
 .product-pic {
     max-width: 10rem;
+}
+
+.quantity {
+    padding: 0 0.5rem;
 }

@@ -1,14 +1,13 @@
-.table-header {
+.buy-btn {
     color: var(--text-primary);
     background-color: var(--background);
     transition: all .5s;
-}
-
-.table-header > tr > th {
-    text-align: top; 
+    border: 0.1rem solid #909090;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.product-pic {
-    max-width: 10rem;
+.inactive {
+    opacity: 50%;
+    cursor: not-allowed;
 }

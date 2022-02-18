@@ -1,14 +1,7 @@
-.table-header {
+.remove-all-btn {
     color: var(--text-primary);
     background-color: var(--background);
     transition: all .5s;
-}
-
-.table-header > tr > th {
-    text-align: top; 
+    cursor: pointer;
     font-weight: 700;
-}
-
-.product-pic {
-    max-width: 10rem;
 }
