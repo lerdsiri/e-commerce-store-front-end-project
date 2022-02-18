@@ -34,10 +34,10 @@ export default function CartTable() {
             <Table striped bordered hover className='table'>
                 <thead className='table-header'>
                     <tr>
-                        <th>Product Title</th>
+                        <th className='title-col'>Product Title</th>
                         <th>Image</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
+                        <th className='price-col'>Price</th>
+                        <th className='quantity-col'>Quantity</th>
                         <th>Remove</th>
                     </tr>
                 </thead>
@@ -46,7 +46,7 @@ export default function CartTable() {
                         <tr key={product.id}>
                             <td>{product.title}</td>
                             <td><img src={product.image} alt="product" className="product-pic" /></td>
-                            <td>{product.price.toLocaleString('en-US')}</td>
+                            <td>{product.price.toLocaleString('en-US')} &euro;</td>
                             <td>
                                 <button onClick={() => handleAddQuant(product)}> + </button>
                                 <span className='quantity'>{product.purchasedQuant}</span>

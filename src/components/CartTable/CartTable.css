@@ -15,6 +15,18 @@
     font-weight: 700;
 }
 
+.title-col {
+    max-width: 30%;
+}
+
+.quantity-col {
+    min-width: 7rem;
+}
+
+.price-col {
+    min-width: 7rem;
+}
+
 .product-pic {
     max-width: 10rem;
 }

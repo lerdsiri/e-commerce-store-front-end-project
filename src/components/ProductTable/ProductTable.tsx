@@ -58,10 +58,12 @@ export default function ProductTable() {
                         </FormControl>
                     </th>
                     <th>
-                        Rating <button onClick={handleSortByRating}>sort <SortIcon /></button>
+                        <span>Rating </span>
+                        <button onClick={handleSortByRating}>sort <SortIcon /></button>
                     </th>
                     <th>
-                        Price <button onClick={handleSortByPrice}>sort <SortIcon /></button>
+                        <span>Price </span>
+                        <button onClick={handleSortByPrice}>sort <SortIcon /></button>
                     </th>
                     <th>Add to Cart</th>
                 </tr>
