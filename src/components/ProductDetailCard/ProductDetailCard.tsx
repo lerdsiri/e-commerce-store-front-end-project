@@ -19,7 +19,7 @@ export default function ProductDetailCard(title: {title: string | undefined} ) {
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        image={product.image}
+                        image={product?.image}
                         alt="green iguana"
                     />
                     <CardContent>
