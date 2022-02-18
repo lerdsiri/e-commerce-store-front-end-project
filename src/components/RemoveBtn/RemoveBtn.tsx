@@ -5,10 +5,9 @@ import { cartActions } from 'store/cartSlice';
 import 'components/RemoveBtn/RemoveBtn.css';
 
 export default function RemoveBtn(removedProduct: {removedProduct: Product}) {
-    
     const removedProd = removedProduct.removedProduct;
-    
     const dispatch = useDispatch();
+    
     const handleRemove = (removedProd: Product): void => {
         dispatch(cartActions.remove({product: removedProd}));
     }

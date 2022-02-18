@@ -5,7 +5,6 @@ import { cartActions } from 'store/cartSlice';
 import 'components/AddToCartBtn/AddToCartBtn.css';
 
 export default function AddToCartBtn(addedProduct: {addedProduct: Product}) {
-    
     const cart = useSelector((state: RootState) => state.cart.cart);
     const cartItems = cart.map((cartItem) => cartItem.title);
     const addedProd = addedProduct.addedProduct;

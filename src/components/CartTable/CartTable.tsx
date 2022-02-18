@@ -11,22 +11,21 @@ import 'components/CartTable/CartTable.css';
 export default function CartTable() {
     const cart = useSelector((state: RootState) => state.cart.cart);
     const dispatch = useDispatch();
+    const totalPrice = cart.map((product) => product.purchasedQuant * product.price).reduce((a,b) => a + b);
 
     const handleAddQuant = (product: Product) => {
         dispatch(cartActions.addQuantity({product: product}));
-    }
+    };
 
     const handleReduceQuant = (product: Product) => {
         dispatch(cartActions.reduceQuantity({product: product}));
-    }
+    };
 
     if (!cart.length) {
         return (
             <h2 className='cart-empty-text'>Cart is empty!</h2>
         )
     }
-
-    const totalPrice = cart.map((product) => product.purchasedQuant * product.price).reduce((a,b) => a + b);
 
     return (
         <div className='cart-table'>
@@ -55,7 +54,6 @@ export default function CartTable() {
                             <td>
                                 <RemoveBtn removedProduct={product} />
                             </td>
-
                         </tr>
                     ))}
                     <tr>

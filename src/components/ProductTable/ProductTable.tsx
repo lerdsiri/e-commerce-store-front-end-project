@@ -1,12 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Table from 'react-bootstrap/Table';
-
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
-
 import SortIcon from '@mui/icons-material/Sort';
 
 import AddToCartBtn from 'components/AddToCartBtn/AddToCartBtn';
@@ -26,7 +24,6 @@ export default function ProductTable() {
         "jewelery",
         "electronics",
     ];
-
 
     const handleCategorySelect = (event: any) => {
         dispatch(productActions.filterByCategory(event.target.value));
@@ -80,7 +77,6 @@ export default function ProductTable() {
                         </td>
                         <td>{product.price.toLocaleString('en-US')} &euro;</td>
                         <td><AddToCartBtn addedProduct={product} /></td>
-
                     </tr>
                 ))}
             </tbody>

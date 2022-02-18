@@ -1,11 +1,9 @@
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 
-import ProductDetailCard from 'components/ProductDetailCard/ProductDetailCard';
+import ProductDetailCard from "components/ProductDetailCard/ProductDetailCard";
 
 export default function ProductDetails() {
-    const {title} = useParams();
+  const { title } = useParams();
 
-        return (
-            <ProductDetailCard title={title} />
-        )
+  return <ProductDetailCard title={title} />;
 }

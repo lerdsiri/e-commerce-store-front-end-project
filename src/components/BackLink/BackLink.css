@@ -3,7 +3,6 @@
     background-color: var(--background);
     transition: all .5s;
     cursor: pointer;
-
     padding: 1rem;
     margin: 2rem;
     border: 0.1rem solid #909090;

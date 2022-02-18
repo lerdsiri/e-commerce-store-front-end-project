@@ -10,7 +10,7 @@ import ProductDetails from 'pages/ProductDetails/ProductDetails';
 import Cart from 'pages/Cart/Cart';
 import 'App.css';
 
-function App() {
+export default function App() {
 
   const dispatch = useDispatch();
   const theme = useSelector((state: RootState) => state.theme.theme);
@@ -31,8 +31,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-   
   );
 }
 
-export default App;

@@ -17,6 +17,7 @@ export const productSlice = createSlice({
             state.products = action.payload.products
             state.filteredProdList = action.payload.products
         },
+
         filterProducts(state: ProductReducerState, action: PayloadAction<{searchTerm: string}>): void {
             state.filteredProdList = state.products.filter((product) => {
                 return (
@@ -25,6 +26,7 @@ export const productSlice = createSlice({
                 );
             })
         },
+
         filterByCategory(state: ProductReducerState, action: PayloadAction<string>): void {
             if(action.payload === "all") {
                 state.filteredProdList = state.products;
@@ -36,6 +38,7 @@ export const productSlice = createSlice({
                 })
             }
         },
+
         sortByPrice(state: ProductReducerState): void {
             if(!state.sortedByPrice) {
                 state.products.sort((a,b) => a.price - b.price);
@@ -44,9 +47,9 @@ export const productSlice = createSlice({
                 state.products.sort((a,b) => b.price - a.price);
                 state.filteredProdList.sort((a,b) => b.price - a.price);
             }
-
             state.sortedByPrice = !state.sortedByPrice;
         },
+
         sortByRating(state: ProductReducerState): void {
             if(!state.sortedByRating) {
                 state.products.sort((a,b) => a.rating.rate - b.rating.rate);
@@ -55,7 +58,6 @@ export const productSlice = createSlice({
                 state.products.sort((a,b) => b.rating.rate - a.rating.rate);
                 state.filteredProdList.sort((a,b) => b.rating.rate - a.rating.rate);
             }
-
             state.sortedByRating = !state.sortedByRating;
         },
     },
