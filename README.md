@@ -1,10 +1,18 @@
 ## Overview
 
-An e-commerce site with the following functionalities: search by product name/description, sort by rating, sort by price, filter by product cateogry, toggle color theme, add/remove from cart.
+An e-commerce site made as part of the assignment at the coding bootcamp, Integrify Academy, with the following functionalities: 
+- search by product name/description
+- sort by rating
+- sort by price
+- filter by product cateogry
+- toggle color theme
+- add/remove from cart.
 
-API used: https://fakestoreapi.com/
+This is a solo project - github automatically added the instructor as a co-contributor who set up the original private repository under Integrify Academy github account for ease of turning in the assignment. The codes were otherwise written independently.
 
-Note: not connected to an actual backend (cannot process cart checkout or faked payment).
+REST API used: https://fakestoreapi.com/
+
+Note: Not connected to an actual backend (cannot process cart checkout or faked payment).
 
 ### Link
 
