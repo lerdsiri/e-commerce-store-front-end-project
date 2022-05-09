@@ -1,6 +1,6 @@
 ## Overview
 
-An e-commerce site made as part of the assignment at the coding bootcamp, Integrify Academy, with the following functionalities: 
+An e-commerce site made as part of the training with the software company Integrify in Helsinki (remote), with the following functionalities: 
 - search by product name/description
 - sort by rating
 - sort by price
