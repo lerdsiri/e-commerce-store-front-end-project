@@ -22,5 +22,5 @@ Deployed on Netlify at https://siri-front-end-ecommerce.netlify.app/
 
 - React, Typescript
 - Redux Toolkit
-- Material UI, Bootstrap, CSS
+- CSS, Material UI, Bootstrap
 - LocalStorage persistence (items remain in cart after refreshing page)
