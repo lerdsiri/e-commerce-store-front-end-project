@@ -1,6 +1,0 @@
-.remove-btn {
-    color: var(--text-primary);
-    background-color: var(--background);
-    transition: all .5s;
-    cursor: pointer;
-}
