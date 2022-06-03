@@ -1,13 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
-import { Product, RootState } from 'types';
+import { Product } from 'types';
 import { cartActions } from 'store/cartSlice';
 import Button from 'components/Button/Button';
-import 'components/AddToCartBtn/AddToCartBtn.css';
 
 export default function AddToCartBtn(addedProduct: {addedProduct: Product}) {
-    //const cart = useSelector((state: RootState) => state.cart.cart);
-    //const cartItems = cart.map((cartItem) => cartItem.title);
     const addedProd = addedProduct.addedProduct;
     
     const dispatch = useDispatch();
@@ -17,15 +14,5 @@ export default function AddToCartBtn(addedProduct: {addedProduct: Product}) {
     
     return (
         <Button text="Add to cart" clickHandler={() => handleBuyClick(addedProd)} />  
-
-        /*
-        <button
-            onClick={() => handleBuyClick(addedProd)}
-            className={cartItems.includes(addedProd.title) ? "buy-btn inactive" : "buy-btn"}
-            disabled={cartItems.includes(addedProd.title)}
-        >
-            Add to cart
-        </button>
-        */
     );
 }

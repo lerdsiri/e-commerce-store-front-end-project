@@ -1,7 +1,0 @@
-.remove-all-btn {
-    color: var(--text-primary);
-    background-color: var(--background);
-    transition: all .5s;
-    cursor: pointer;
-    font-weight: 700;
-}

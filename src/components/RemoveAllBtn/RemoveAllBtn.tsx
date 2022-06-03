@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 
 import { cartActions } from 'store/cartSlice';
-import 'components/RemoveAllBtn/RemoveAllBtn.css';
+import Button from 'components/Button/Button';
 
 export default function RemoveBtn() {
     
@@ -11,11 +11,6 @@ export default function RemoveBtn() {
     }
     
     return (
-        <button 
-            onClick={handleRemoveAll}
-            className='remove-all-btn'
-        >
-            REMOVE ALL
-        </button>
+        <Button text="REMOVE ALL" clickHandler={handleRemoveAll} />
     );
 }
