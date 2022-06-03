@@ -1,7 +1,17 @@
-nav {
+.nav-row-1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--background);
+}
+
+.nav-row-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: solid 1px #ccc;
+    margin-bottom: 1rem;
 }
 
 .logo-area {
@@ -27,6 +37,7 @@ nav {
     border: none;
     border-bottom: 0.1rem solid #909090;
     padding-right: 2rem;
+    background-color: var(--background);
 }
 
 .cart-area {
@@ -35,4 +46,24 @@ nav {
 
 .switch {
     color: #909090;
+}
+
+.rating-sort-button {
+    font-weight: 700;
+    color: var(--text-primary);
+    transition: all .5s;
+    border: 0.1rem solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px #ccc;
+    cursor: pointer;
+}
+
+.price-sort-button {
+    font-weight: 700;
+    color: var(--text-primary);
+    transition: all .5s;
+    border: 0.1rem solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px #ccc;
+    cursor: pointer;
 }

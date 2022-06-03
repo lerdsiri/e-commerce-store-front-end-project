@@ -8,7 +8,6 @@ import { productActions } from 'store/productSlice';
 import Home from 'pages/Home/Home';
 import ProductDetails from 'pages/ProductDetails/ProductDetails';
 import Cart from 'pages/Cart/Cart';
-import 'App.css';
 
 export default function App() {
 
