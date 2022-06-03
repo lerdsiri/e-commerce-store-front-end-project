@@ -67,3 +67,22 @@
     box-shadow: 0px 0px 5px 1px #ccc;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .nav-row-1 {
+        flex-direction: column;
+    }
+
+    .search-bar, .color-toggle, .cart-area {
+        margin: 1rem;
+    }
+
+    .nav-row-2 {
+        flex-direction: column;
+    }
+
+    .category-select, .rating-sort-button, .price-sort-button {
+        margin: 1rem;
+    }
+}
+

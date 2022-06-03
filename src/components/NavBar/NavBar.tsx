@@ -63,7 +63,7 @@ export default function NavBar() {
             className='search-box'
           />
         </div>
-        <div>
+        <div className='color-toggle'>
           <Form onChange={handleThemeSwitch} className='switch'>
             <Form.Check
               type='switch'
@@ -77,7 +77,7 @@ export default function NavBar() {
         </div>
       </div>
       <div className='nav-row-2'>
-        <div>
+        <div className='category-select'>
           <FormControl style={{minWidth: 100}}>
             <InputLabel>Categories</InputLabel>
             <Select onChange={handleCategorySelect}>
