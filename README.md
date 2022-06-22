@@ -14,6 +14,8 @@ REST API used: https://fakestoreapi.com/
 
 Note: Not connected to an actual backend (cannot process cart checkout or faked payment).
 
+![homepage](./src/assets/images/ECommerceStore.jpg)
+
 ### Link
 
 Deployed on Netlify at https://siri-front-end-ecommerce.netlify.app/
