@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-//import Table from 'react-bootstrap/Table';
 import Card from 'react-bootstrap/Card';
 
 import AddToCartBtn from 'components/AddToCartBtn/AddToCartBtn';

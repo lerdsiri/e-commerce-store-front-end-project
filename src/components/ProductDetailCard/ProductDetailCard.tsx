@@ -1,3 +1,6 @@
+// Unused file at the moment
+// May convert into a proper component later by importing code from ProductTable.tsx
+
 import { useSelector } from 'react-redux';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
